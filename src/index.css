@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+
+.main-container{
+    @apply flex flex-col justify-center items-center h-screen w-full;
+}
+
+.todo-form{
+    @apply p-2 m-2;
+}
+
+.todo-list{
+    @apply flex-initial overflow-y-auto w-150 p-2 border-2 border-purple-600 rounded-lg;
+}
+
+.todo-actions-container{
+    @apply flex gap-10 p-2 m-2;
+}
+
+.todo-actions-btn{
+    @apply border-2 border-white px-2 py-1 text-gray-50 font-semibold text-lg rounded-lg cursor-pointer hover:bg-purple-800;
+}
