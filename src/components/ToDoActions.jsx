@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { memo } from "react";
 
 const ToDoActions = ({ todos ,setTodoShow, todoShow, removeAllComplete, toggleAllComplete }) => {
     let isAllComplete = todos.every((todo) => todo.complete);
@@ -38,4 +38,4 @@ const ToDoActions = ({ todos ,setTodoShow, todoShow, removeAllComplete, toggleAl
   );
 };
 
-export default ToDoActions;
+export default memo(ToDoActions);

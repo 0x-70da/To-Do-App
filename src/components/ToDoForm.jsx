@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { memo, useState } from "react"
 import shortid from 'shortid'
 
 const ToDoForm = ({addTodo}) => {
@@ -19,4 +19,4 @@ const ToDoForm = ({addTodo}) => {
   )
 }
 
-export default ToDoForm
+export default memo(ToDoForm);
