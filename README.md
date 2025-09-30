@@ -3,9 +3,8 @@
 A simple and modern To-Do application built with React.js and Tailwind CSS.
 This project helps users manage daily tasks with filtering and bulk actions.
 
-<img width="602" height="404" alt="image" src="https://github.com/user-attachments/assets/f1048f51-2ee3-4e17-8727-7d7094adb092" />
-
 <img width="803" height="525" alt="image" src="https://github.com/user-attachments/assets/d5914ae9-10d0-4320-994f-0c0fa0176426" />
+
 
 🚀 Features
 
