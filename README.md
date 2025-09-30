@@ -7,6 +7,10 @@ This project helps users manage daily tasks with filtering and bulk actions.
 
 ➕ Add Task – Easily add new tasks to the list.
 
+❌ Delete Task – Easily delete existing tasks from the list.
+
+✏️ Edit Task – Easily edit existing tasks in the list.
+
 ✅ Toggle Task Completion – Mark tasks as complete or active.
 
 🔄 Toggle All Tasks Complete – Mark all tasks as complete or reset them in one click.
