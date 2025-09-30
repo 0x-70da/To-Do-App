@@ -1,18 +1,22 @@
-import React, { memo } from 'react'
+import React, { memo } from "react";
+import Todo from "./Todo";
 
-
-const ToDoList = ({todos, onDelete, toggleComplete}) => {
+const ToDoList = ({ todos, onDelete, onEdit, toggleComplete }) => {
+  //todos => filteredTodos
 
   return (
-    <div className='todo-list'>
-        {todos.map((todo) => (
-            <div key={todo.id} className='bg-purple-100 flex justify-between items-center px-2 my-2'>
-                <p onClick={() => toggleComplete(todo.id)} className={`text-lg font-semibold wrap-anywhere cursor-pointer ${todo.complete? "line-through": ""}`}>{todo.name}</p>
-                <button onClick={() => onDelete(todo.id)} className='bg-red-600 py-1 px-2 m-2 text-lg font-semibold border-2 rounded-full hover:bg-red-800 hover:text-white cursor-pointer'>X</button>
-            </div>
-        ))}
+    <div className="todo-list">
+      {todos.map((todo) => (
+        <Todo
+          key={todo.id}
+          todo={todo}
+          onDelete={onDelete}
+          onEdit={onEdit}
+          toggleComplete={toggleComplete}
+        />
+      ))}
     </div>
-  )
-}
+  );
+};
 
 export default memo(ToDoList);

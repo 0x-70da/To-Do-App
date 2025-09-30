@@ -1,22 +1,45 @@
 @import "tailwindcss";
 
-
-.main-container{
-    @apply flex flex-col justify-center items-center h-screen w-full;
+.main-container {
+  @apply flex flex-col justify-center items-center h-screen w-full;
 }
 
-.todo-form{
-    @apply p-2 m-2;
+.todo-form {
+  @apply p-2 m-2;
 }
 
-.todo-list{
-    @apply flex-initial overflow-y-auto w-150 p-2 border-2 border-purple-600 rounded-lg;
+.todo-form .add-todo-btn {
+  @apply py-1 px-2 bg-purple-600 m-2 text-lg text-gray-50 font-semibold border-2 rounded-md hover:bg-purple-900 cursor-pointer;
 }
 
-.todo-actions-container{
-    @apply flex gap-10 p-2 m-2;
+.todo-list {
+  @apply flex-initial overflow-y-auto w-150 p-2 border-2 border-purple-600 rounded-lg;
 }
 
-.todo-actions-btn{
-    @apply border-2 border-white px-2 py-1 text-gray-50 font-semibold text-lg rounded-lg cursor-pointer hover:bg-purple-800;
+.todo-list .todo {
+  @apply bg-purple-100 flex justify-between items-center px-2 my-2;
+}
+
+.edit-todo-input {
+  @apply p-1 border-1 border-blue-600 font-semibold;
+}
+
+.todo-list .todo .todo-name {
+  @apply text-lg font-semibold wrap-anywhere cursor-pointer;
+}
+
+.todo-list .todo .todo-btn-container .delete-todo-btn {
+  @apply bg-red-600 py-1 px-2 m-2 text-lg font-semibold border-2 rounded-full hover:bg-red-800 hover:text-white cursor-pointer;
+}
+
+.todo-list .todo .todo-btn-container .edit-todo-btn {
+  @apply bg-purple-600 py-1 px-2 m-2 text-lg font-semibold border-2 rounded-full hover:bg-purple-800 hover:text-white cursor-pointer;
+}
+
+.todo-actions-container {
+  @apply flex gap-10 p-2 m-2;
+}
+
+.todo-actions-btn {
+  @apply border-2 border-white px-2 py-1 text-gray-50 font-semibold text-lg rounded-lg cursor-pointer hover:bg-purple-800;
 }

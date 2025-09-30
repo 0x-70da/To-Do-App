@@ -1,7 +1,14 @@
 import React, { memo } from "react";
 
-const ToDoActions = ({ todos ,setTodoShow, todoShow, removeAllComplete, toggleAllComplete }) => {
-    let isAllComplete = todos.every((todo) => todo.complete);
+const ToDoActions = ({
+  todos,
+  setTodoShow,
+  todoShow,
+  removeAllComplete,
+  toggleAllComplete,
+}) => {
+  //todos => real todos(not filtered)
+  let isAllComplete = todos.every((todo) => todo.complete);
   return (
     <>
       <div className="todo-actions-container">
@@ -31,10 +38,19 @@ const ToDoActions = ({ todos ,setTodoShow, todoShow, removeAllComplete, toggleAl
         </button>
       </div>
       <div className="todo-actions-container">
-        <button onClick={() => toggleAllComplete()} className={`todo-actions-btn ${isAllComplete && todos.length? "bg-purple-800": " "}`}>Toggle all complete</button>
-        <button onClick={removeAllComplete} className="todo-actions-btn">Remove all complete tasks</button>
+        <button
+          onClick={() => toggleAllComplete()}
+          className={`todo-actions-btn ${
+            isAllComplete && todos.length ? "bg-purple-800" : " "
+          }`}
+        >
+          Toggle all complete
+        </button>
+        <button onClick={removeAllComplete} className="todo-actions-btn">
+          Remove all complete tasks
+        </button>
       </div>
-      </>
+    </>
   );
 };
 
